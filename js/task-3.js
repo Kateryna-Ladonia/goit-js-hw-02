@@ -1,6 +1,8 @@
 function checkForSpam(message) {
   const messageEnd = message.toLowerCase()
-  if (messageEnd.includes("spam" && "sale")) {
+  if (messageEnd.includes("spam")) {
+    return true;
+  } else if (messageEnd.includes("sale")) {
     return true;
   } else {
     return false;
